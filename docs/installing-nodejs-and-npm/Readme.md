@@ -1,8 +1,4 @@
----
-layout: ../layouts/default.html
-title: Installation of Node.js     
-description: Steps to download and Install Node.js
----
+
 # Installation of Node.js 
 
 Node JS installations differ on Diffrent Operating Systems. We will go through Step by Step Progress 

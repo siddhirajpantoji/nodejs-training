@@ -1,8 +1,3 @@
----
-layout: default
-title: Creating First Nodejs Application    
-description: Basic Server application in Node.js
----
 # Creating first Nodejs Application 
 
 Lets create a Simple HTTP Endpoint which says hello world in response when we hit it with Browser 

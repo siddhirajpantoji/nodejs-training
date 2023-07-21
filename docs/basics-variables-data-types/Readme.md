@@ -1,8 +1,4 @@
----
-layout: default
-title: Basics of Javascript     
-description: Core Basic Baby Steps Concepts
----
+
 # Basics of Javascript 
 
 We will cover basic concepts of Javascript with like Variables , Datatypes, Strict Etc 
