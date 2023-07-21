@@ -1,8 +1,4 @@
----
-layout: default
-title: Introduction to Node.js   
-description: Fundamental Concepts of Node.js
----
+
 # Introduction to Node.js 
 
 Welocme all to world of Node.js . Node.js is Server Side Javascript.
