@@ -83,7 +83,7 @@ let x = 3.14;
 delete x;  // SyntaxError: Delete of an unqualified identifier in strict mode.
 ```
 
-Deleting a function is not allowed. **[code](({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-invalid-example-6.js)**
+Deleting a function is not allowed. **[code]({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-invalid-example-6.js)**
 ```js
 "use strict";
 function x(p1, p2) {};
