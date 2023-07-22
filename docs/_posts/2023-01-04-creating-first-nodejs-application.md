@@ -32,7 +32,7 @@ server.listen(port, hostname, () => {
 });
 
 ```
-You can find the file **[here](https://github.com/siddhirajpantoji/nodejs-beginner-guide/blob/main/src/creating-first-nodejs-application/hello-world-app.js)** which you can easily copy in your local machine 
+You can find the file **[here]({{ site.github.repository_url }}/blob/main/src/creating-first-nodejs-application/hello-world-app.js)** which you can easily copy in your local machine 
 
 We will be understanding all concepts one by one in Further Sections 
 ## Run the application 
