@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: homepage
 title: Node.js Beginer tutorial 
 description: Basic Easy to learn Tutorial for Absolute Beginers 
 ---
@@ -21,7 +21,7 @@ This repository contains a beginner-level tutorial for Node.js. It covers variou
 - Conditional Flow - If statememt, switch cases 
 - Loops ( For , while , do while , for each )
 - Functions 
-- Code Quality 
+- Code Quality s
 - Objects and Properties 
 - Inheritance and Prototypes 
 - Classes 
@@ -42,6 +42,3 @@ This repository contains a beginner-level tutorial for Node.js. It covers variou
 - Scripting with S3 for Listing , Reading , Writing in Node.js
 - Best Practices for Node.js Development 
 - Exploring other modules of Node.js 
-
-
-***Please Note : Links not clickable are work in progress and will be written in future. Subject to Change. Currently added as placeholders ***
