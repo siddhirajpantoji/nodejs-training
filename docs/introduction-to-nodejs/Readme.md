@@ -49,7 +49,7 @@ node hello-world.js
 Output of Below Program is 
 ```shell
 Hello World!
-```s
+```
 You can find above code in ***[this]({{ site.github.repository_url }}/blob/main/src/introduction-to-nodejs/hello-world.js)*** file 
 
 
