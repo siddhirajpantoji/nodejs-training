@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Installation of Node.js   
-description: Installation of Node.js 
+title: Creating first Nodejs Application    
+description: Creating Hello World Server Application 
 date: 2023-01-04 00:00:00
 ---
 # Creating first Nodejs Application 
