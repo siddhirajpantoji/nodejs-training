@@ -13,8 +13,8 @@ This repository contains a beginner-level tutorial for Node.js. It covers variou
 
 ## Table of Contents
 
-- [Introduction to Node.js](./introduction-to-nodejs/)
-- [Installing Node.js and NPM](./installing-nodejs-and-npm/)
+- [Introduction to Node.js](./_posts/introduction-to-nodejs)
+- [Installing Node.js and NPM](./_posts/installing-nodejs-and-npm.md)
 - [Creating your first Node.js application](./creating-first-nodejs-application/)
 - [Setup IDE for Further Course](./setup-ide-for-development/)
 - [Basics - Variables, DataTypes](./basics-variables-data-types/)
