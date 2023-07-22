@@ -10,9 +10,9 @@ date: 2023-01-05 00:00:00
 We will cover basic concepts of Javascript with like Variables , Datatypes, Strict Etc 
 
 1. [Use Strict](#use-strict) 
-    1.1[Why Strict Mode ](#why-strict-mode)
-    1.2[Invalid Examples of Strict](#invalid-examples-of-strict)
-    1.3 Correct Way to use it 
+    1. [Why Strict Mode ](#why-strict-mode)
+    2. [Not Allowed in Strict Mode](#not-allowed-in-strict-mode)
+    3.  Correct Way to use it 
 2. variables
 3. datatypes 
 4. Type Conversions
