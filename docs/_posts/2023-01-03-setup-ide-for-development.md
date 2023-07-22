@@ -2,7 +2,7 @@
 layout: default
 title: Setup IDE of Node js   
 description: 
-weight: 2
+date: 2023-01-03 00:00:00
 ---
 # Setup IDE for Development 
 

@@ -2,7 +2,7 @@
 layout: default
 title: Basics of javascript 
 description: Basic Easy to learn Tutorial for Absolute Beginers 
-weight: 10
+date: 2023-01-05 00:00:00
 ---
 
 # Basics of Javascript 

@@ -2,7 +2,7 @@
 layout: default
 title: Installation of Node.js   
 description: Installation of Node.js 
-weight: 3
+date: 2023-01-02 00:00:00
 ---
 # Installation of Node.js 
 
