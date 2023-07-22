@@ -1,3 +1,9 @@
+---
+layout: default
+title: Setup IDE of Node js   
+description: 
+weight: 2
+---
 # Setup IDE for Development 
 
 We can use any IDE for Working in Node.js Here are two Options. 

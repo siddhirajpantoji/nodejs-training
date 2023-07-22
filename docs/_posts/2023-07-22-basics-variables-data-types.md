@@ -1,5 +1,6 @@
 ---
-title: Basics Variables and Data Types 
+layout: default
+title: Basics of javascript 
 description: Basic Easy to learn Tutorial for Absolute Beginers 
 weight: 10
 ---
