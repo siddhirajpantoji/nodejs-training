@@ -10,7 +10,9 @@ date: 2023-01-05 00:00:00
 We will cover basic concepts of Javascript with like Variables , Datatypes, Strict Etc 
 
 1. [Use Strict](#use-strict) 
-1.1 [Invalid Example of Strict](#invalid-examples-of-strict)
+    1.1[Why Strict Mode ](#why-strict-mode)
+    1.2[Invalid Examples of Strict](#invalid-examples-of-strict)
+    1.3 Correct Way to use it 
 2. variables
 3. datatypes 
 4. Type Conversions
@@ -25,33 +27,29 @@ With strict mode, you can not, for example, use undeclared variables.
 Strict mode is declared by adding "use strict"; to the beginning of a script or a function.
 Declared at the beginning of a script, it has global scope (all code in the script will execute in strict mode):
 
-### Invalid Examples of Strict 
-See Below **[code]({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-example-1.js)** as example in file ``
+### Why Strict Mode 
+Strict mode makes it easier to write "secure" JavaScript.
+Strict mode changes previously accepted "bad syntax" into real errors.
+As an example, in normal JavaScript, mistyping a variable name creates a new global variable. In strict mode, this will throw an error, making it impossible to accidentally create a global variable.
+In normal JavaScript, a developer will not receive any error feedback assigning values to non-writable properties.
+In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object, will throw an error.
+
+### Not allowed in Strict mode  
+Below Examples are of what possible things are not allowed in strict Mode.
+Each sample can be copied and saved in your local file. lets consider it `example.js`.
+Navigate  to the directory from Command prompt execute with below Command 
+```shell
+node example.js
+```
+
+Consider below  **[Example]({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-invalid-example-1.js)**
 ```js
 "use strict";
 x = 3.14;  // This will cause Error as x is not defined 
 console.log(x)
 ```
-Output of this will be  Error :x:  due to non declaration of a variable 
-```
-iddhirajpantoji@Siddhirajs-MacBook-Pro basic-varaible-datatypes % node strict-example-1.js 
-/Users/siddhirajpantoji/Siddhiraj/nodejs-beginer-guide/src/basic-varaible-datatypes/strict-example-1.js:2
-x = 3.14; 
-  ^
 
-ReferenceError: x is not defined
-    at Object.<anonymous> (/Users/siddhirajpantoji/Siddhiraj/nodejs-beginer-guide/src/basic-varaible-datatypes/strict-example-1.js:2:3)
-    at Module._compile (node:internal/modules/cjs/loader:1256:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
-    at Module.load (node:internal/modules/cjs/loader:1119:32)
-    at Module._load (node:internal/modules/cjs/loader:960:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
-    at node:internal/main/run_main_module:23:47
-
-Node.js v18.16.1
-```
-
-See Another **[example]({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-example-2.js)**
+See Another **[example]({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-invalid-example-2.js)**
 ```js
 "use strict";
 myFunction();
@@ -60,24 +58,36 @@ function myFunction() {
   y = 3.14;   // This will also cause an error because y is not declared
 }
 ```
-Output Will be 
+Lets Consider Third **[example]({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-invalid-example-3.js)** of Failure
+
+```js
+x = 3.14;       // This will not cause an error.
+myFunction();
+
+function myFunction() {
+  "use strict";
+  y = 3.14;   // This will cause an error
+}
 ```
-siddhirajpantoji@Siddhirajs-MacBook-Pro basic-varaible-datatypes % node strict-example-2.js 
-/Users/siddhirajpantoji/Siddhiraj/nodejs-beginer-guide/src/basic-varaible-datatypes/strict-example-2.js:5
-  y = 3.14;   // This will also cause an error because y is not declared
-    ^
+:warning: Objects are variables too 
+Using an object, without declaring it, is not allowed: ***[code]({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-invalid-example-4.js)***
+```js
+"use strict";
+x = {p1:10, p2:20};      // This will cause an error
+```
 
-ReferenceError: y is not defined
-    at myFunction (/Users/siddhirajpantoji/Siddhiraj/nodejs-beginer-guide/src/basic-varaible-datatypes/strict-example-2.js:5:5)
-    at Object.<anonymous> (/Users/siddhirajpantoji/Siddhiraj/nodejs-beginer-guide/src/basic-varaible-datatypes/strict-example-2.js:2:1)
-    at Module._compile (node:internal/modules/cjs/loader:1256:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
-    at Module.load (node:internal/modules/cjs/loader:1119:32)
-    at Module._load (node:internal/modules/cjs/loader:960:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
-    at node:internal/main/run_main_module:23:47
+Deleting a variable (or object) is not allowed. **[code]({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-invalid-example-5.js)**
+```js
+"use strict";
+let x = 3.14;
+delete x;  // SyntaxError: Delete of an unqualified identifier in strict mode.
+```
 
-Node.js v18.16.1
+Deleting a function is not allowed. **[code](({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-invalid-example-6.js)**
+```js
+"use strict";
+function x(p1, p2) {};
+delete x;                // This will cause an error 
 ```
 
 :warning: Strict Mode should be activated at the strat of file "use strict";
