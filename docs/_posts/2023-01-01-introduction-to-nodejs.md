@@ -52,7 +52,7 @@ Output of Below Program is
 ```shell
 Hello World!
 ```
-You can find above code in ***[this](https://github.com/siddhirajpantoji/nodejs-beginner-guide/blob/main/src/introduction-to-nodejs/hello-world.js)*** file 
+You can find above code in ***[this](/src/introduction-to-nodejs/hello-world.js)*** file 
 
 
 ## Next Steps 
