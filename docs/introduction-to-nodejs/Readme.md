@@ -49,8 +49,8 @@ node hello-world.js
 Output of Below Program is 
 ```shell
 Hello World!
-```
-You can find above code in ***[this](https://github.com/siddhirajpantoji/nodejs-beginner-guide/blob/main/src/introduction-to-nodejs/hello-world.js)*** file 
+```s
+You can find above code in ***[this]({{ site.github.repository_url }}/blob/main/src/introduction-to-nodejs/hello-world.js)*** file 
 
 
 ## Next Steps 
