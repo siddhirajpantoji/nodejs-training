@@ -6,3 +6,10 @@ show_downloads: false
 plugins:
   - jemoji 
   # - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
