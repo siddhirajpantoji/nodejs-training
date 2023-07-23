@@ -12,7 +12,7 @@ We will cover basic concepts of Javascript with like Variables , Datatypes, Stri
 1. [Use Strict](#use-strict) 
     1. [Why Strict Mode ](#why-strict-mode)
     2. [Not Allowed in Strict Mode](#not-allowed-in-strict-mode)
-    3.  Correct Way to use it 
+    3. Behaviour of this keyword 
 2. variables
 3. datatypes 
 4. Type Conversions
@@ -89,5 +89,33 @@ Deleting a function is not allowed. **[code]({{ site.github.repository_url }}/bl
 function x(p1, p2) {};
 delete x;                // This will cause an error 
 ```
+Duplicating a parameter name is not allowed: **[code]"use strict";
+let x = 010;   // SyntaxError: Octal literals are not allowed in strict mode.
+```js
+"use strict";
+function x(p1, p1) {};  // SyntaxError: Duplicate parameter name not allowed in this context
+```
+
+Octal numeric literals are not allowed: **[code]({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-invalid-example-8.js)**
+```js
+"use strict";
+let x = 010;   // SyntaxError: Octal literals are not allowed in strict mode.
+```
+
+Octal escape characters are not allowed: **[code]({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-invalid-example-9.js)**
+```js
+"use strict";
+let x = "\010";    // SyntaxError: Octal escape sequences are not allowed in strict mode.
+```
+Writing to a read-only property is not allowed: **[code]({{ site.github.repository_url }}/blob/main/src/basic-varaible-datatypes/strict-invalid-example-10.js)**
+
+```js
+"use strict";
+const obj = {};
+Object.defineProperty(obj, "x", {value:0, writable:false});
+
+obj.x = 3.14;  
+```
+
 
 :warning: Strict Mode should be activated at the strat of file "use strict";
